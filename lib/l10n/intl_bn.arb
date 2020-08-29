@@ -1,0 +1,20 @@
+{
+  "home": "হোম",
+  "notifications": "Notifications",
+  "appName": "Juicy Food",
+  "appSlogan": "Here is a simple but powerful rule: always give people more than what they expect to get.",
+  "login": "Login",
+  "forgotPassword": "Forgot Password",
+  "doNotHaveAccountSignUp": "Do not have Account? Sign Up",
+  "alreadyHaveAccountSignIn": "Already have account? Sign In",
+  "registration": "Registration",
+  "signUp": "Sign Up",
+  "password": "Password",
+  "confirmPassword": "Confirm Password",
+  "username": "Username",
+  "email": "Email",
+  "reset": "Reset",
+  "resetLinkSentToYourEmail": "Reset link sent to your email",
+  "emailSent": "Email Sent",
+  "emailForPasswordResetLink": "Enter your email to reset"
+}
