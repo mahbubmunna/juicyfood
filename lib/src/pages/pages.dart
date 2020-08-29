@@ -1,11 +1,18 @@
 import 'package:juicyfood/elements/DrawerWidget.dart';
 import 'package:flutter/material.dart';
+import 'package:juicyfood/generated/l10n.dart';
+import 'package:juicyfood/src/pages/cart.dart';
+import 'package:juicyfood/src/pages/delivery.dart';
+import 'package:juicyfood/src/pages/discovery.dart';
+import 'package:juicyfood/src/pages/profile.dart';
+import 'package:kf_drawer/kf_drawer.dart';
 
 
 import 'home.dart';
+import 'notifications.dart';
 
 // ignore: must_be_immutable
-class PagesTestWidget extends StatefulWidget {
+class PagesTestWidget extends KFDrawerContent {
   int currentTab;
   Widget currentPage = Home();
   final GlobalKey<ScaffoldState> scaffoldKey = new GlobalKey<ScaffoldState>();
@@ -40,8 +47,21 @@ class _PagesTestWidgetState extends State<PagesTestWidget> {
       widget.currentTab = tabItem;
       switch (tabItem) {
         case 0:
-          widget.currentPage = Home();
+          widget.currentPage = DiscoveryScreen();
           break;
+        case 1:
+          widget.currentPage = DeliveryScreen();
+          break;
+        case 2:
+          widget.currentPage = ProfileScreen();
+          break;
+        case 3:
+          widget.currentPage = NotificationScreen();
+          break;
+        case 4:
+          widget.currentPage = CartScreen();
+          break;
+
       }
     });
   }
@@ -52,18 +72,17 @@ class _PagesTestWidgetState extends State<PagesTestWidget> {
       onWillPop: () async => false,
       child: Scaffold(
         key: widget.scaffoldKey,
-        drawer: DrawerWidget(),
         body: widget.currentPage,
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Theme.of(context).accentColor,
-          selectedFontSize: 16,
-          unselectedFontSize: 0,
-          iconSize: 36,
+          selectedFontSize: 12,
+          unselectedFontSize: 10,
+          iconSize: 24  ,
           elevation: 0,
           backgroundColor: Colors.white,
-          selectedIconTheme: IconThemeData(size: 40, color: Theme.of(context).accentColor),
-          unselectedItemColor: Color(0xFF079E8A),
+          selectedIconTheme: IconThemeData(size: 30, color: Theme.of(context).accentColor),
+          unselectedItemColor: Colors.black54,
           currentIndex: widget.currentTab,
           onTap: (int i) {
             this._selectTab(i);
@@ -71,15 +90,15 @@ class _PagesTestWidgetState extends State<PagesTestWidget> {
           // this will be set when a new tab is tapped
           items: [
             BottomNavigationBarItem(
-              icon: new Icon(Icons.person),
-              title: Container(height: 0,),
+              icon: new Icon(Icons.public ),
+              title: Container(child: Text(S.of(context).discover),),
             ),
             BottomNavigationBarItem(
-              icon: new Icon(Icons.dashboard),
-              title: Container(height: 0,),
+              icon: new Icon(Icons.local_shipping),
+              title: Container(child: Text('Delivery'),),
             ),
             BottomNavigationBarItem(
-              title: Container(height: 0,),
+              title: Container(child: Text('Account')),
                 icon: Container(
 //                  decoration: BoxDecoration(
 //                    color: Theme.of(context).accentColor,
@@ -93,16 +112,16 @@ class _PagesTestWidgetState extends State<PagesTestWidget> {
 //                          color: Theme.of(context).accentColor.withOpacity(0.4), blurRadius: 13, offset: Offset(0, 3))
 //                    ],
 //                  ),
-                  child: new Icon(Icons.home),
+                  child: new Icon(Icons.account_circle),
                 )
             ),
             BottomNavigationBarItem(
-              icon: new Icon(Icons.shopping_cart),
-              title: Container(height: 0,),
+              icon: new Icon(Icons.notifications),
+              title: Container(child: Text('Notifications'),),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.menu),
-              title: Container(height: 0,),
+              icon: Icon(Icons.shopping_basket),
+              title: Container(child: Text('Cart'),),
             ),
           ],
         ),

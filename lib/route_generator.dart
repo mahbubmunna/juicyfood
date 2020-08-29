@@ -1,13 +1,17 @@
 
 
+import 'package:juicyfood/src/pages/add_address.dart';
+import 'package:juicyfood/src/pages/change_password.dart';
 import 'package:juicyfood/src/pages/drawer.dart';
 import 'package:juicyfood/src/pages/home.dart';
 import 'package:juicyfood/src/pages/login.dart';
 import 'package:juicyfood/src/pages/on_boarding.dart';
 import 'package:juicyfood/src/pages/pages.dart';
 import 'package:flutter/material.dart';
+import 'package:juicyfood/src/pages/personal_information.dart';
 import 'package:juicyfood/src/pages/registration.dart';
 import 'package:juicyfood/src/pages/reset_password.dart';
+import 'package:juicyfood/src/pages/save_address.dart';
 import 'models/route_argument.dart';
 
 class RouteGenerator {
@@ -27,6 +31,14 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => Home());
       case '/Drawer':
         return MaterialPageRoute(builder: (_) => DrawerPage());
+      case '/AddAddress':
+        return MaterialPageRoute(builder: (_) => AddAddressScreen());
+      case '/SaveAddress':
+        return MaterialPageRoute(builder: (_) => SaveAddressScreen());
+      case '/PersonalInformation':
+        return MaterialPageRoute(builder: (_) => PersonalInformationScreen());
+      case '/ChangePassword':
+        return MaterialPageRoute(builder: (_) => ChangePasswordScreen());
 
 
       default:

@@ -16,5 +16,22 @@
   "reset": "Reset",
   "resetLinkSentToYourEmail": "Reset link sent to your email",
   "emailSent": "Email Sent",
-  "emailForPasswordResetLink": "Enter your email to reset"
+  "emailForPasswordResetLink": "Enter your email to reset",
+  "welcome": "Welcome",
+  "discover": "Discover",
+  "profile": "Profile",
+  "promocodes": "Promocodes",
+  "orderHistory": "Order History",
+  "paymentMethods": "Payment Methods",
+  "shareAndEarn": "Share and Earn",
+  "discovery": "Discovery",
+  "delivery": "Delivery",
+  "cart": "Cart",
+  "profileInformation": "Profile Information",
+  "lorem_ipsum": "Lorem ipsum dolor sit amet, consectetur non adipiscing elit. Etiam ac tempor leo.",
+  "addAddress": "Add Address",
+  "personalInformation": "Personal Information",
+  "changePassword": "Change Password",
+  "addNewAddress": "Add New Address",
+  "saveNewAddress": "Save New Address"
 }

@@ -21,10 +21,17 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
+    "addAddress" : MessageLookupByLibrary.simpleMessage("Add Address"),
+    "addNewAddress" : MessageLookupByLibrary.simpleMessage("Add New Address"),
     "alreadyHaveAccountSignIn" : MessageLookupByLibrary.simpleMessage("Already have account? Sign In"),
     "appName" : MessageLookupByLibrary.simpleMessage("Juicy Food"),
     "appSlogan" : MessageLookupByLibrary.simpleMessage("Here is a simple but powerful rule: always give people more than what they expect to get."),
+    "cart" : MessageLookupByLibrary.simpleMessage("Cart"),
+    "changePassword" : MessageLookupByLibrary.simpleMessage("Change Password"),
     "confirmPassword" : MessageLookupByLibrary.simpleMessage("Confirm Password"),
+    "delivery" : MessageLookupByLibrary.simpleMessage("Delivery"),
+    "discover" : MessageLookupByLibrary.simpleMessage("Discover"),
+    "discovery" : MessageLookupByLibrary.simpleMessage("Discovery"),
     "doNotHaveAccountSignUp" : MessageLookupByLibrary.simpleMessage("Do not have Account? Sign Up"),
     "email" : MessageLookupByLibrary.simpleMessage("Email"),
     "emailForPasswordResetLink" : MessageLookupByLibrary.simpleMessage("Enter your email to reset"),
@@ -32,12 +39,22 @@ class MessageLookup extends MessageLookupByLibrary {
     "forgotPassword" : MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "home" : MessageLookupByLibrary.simpleMessage("Home"),
     "login" : MessageLookupByLibrary.simpleMessage("Login"),
+    "lorem_ipsum" : MessageLookupByLibrary.simpleMessage("Lorem ipsum dolor sit amet, consectetur non adipiscing elit. Etiam ac tempor leo."),
     "notifications" : MessageLookupByLibrary.simpleMessage("Notifications"),
+    "orderHistory" : MessageLookupByLibrary.simpleMessage("Order History"),
     "password" : MessageLookupByLibrary.simpleMessage("Password"),
+    "paymentMethods" : MessageLookupByLibrary.simpleMessage("Payment Methods"),
+    "personalInformation" : MessageLookupByLibrary.simpleMessage("Personal Information"),
+    "profile" : MessageLookupByLibrary.simpleMessage("Profile"),
+    "profileInformation" : MessageLookupByLibrary.simpleMessage("Profile Information"),
+    "promocodes" : MessageLookupByLibrary.simpleMessage("Promocodes"),
     "registration" : MessageLookupByLibrary.simpleMessage("Registration"),
     "reset" : MessageLookupByLibrary.simpleMessage("Reset"),
     "resetLinkSentToYourEmail" : MessageLookupByLibrary.simpleMessage("Reset link sent to your email"),
+    "saveNewAddress" : MessageLookupByLibrary.simpleMessage("Save New Address"),
+    "shareAndEarn" : MessageLookupByLibrary.simpleMessage("Share and Earn"),
     "signUp" : MessageLookupByLibrary.simpleMessage("Sign Up"),
-    "username" : MessageLookupByLibrary.simpleMessage("Username")
+    "username" : MessageLookupByLibrary.simpleMessage("Username"),
+    "welcome" : MessageLookupByLibrary.simpleMessage("Welcome")
   };
 }
