@@ -11,6 +11,9 @@ class _SaveAddressScreenState extends State<SaveAddressScreen> {
   List _addresses = ['House Number 11, Block A, Road 1, Mirpur 11, Dhaka, Bangladesh',
     'Road 1, Mirpur 11, Dhaka, House Number 11, Block A, Bangladesh'];
   List _activeRecord = [false, false];
+  TextEditingController _newAddressController = TextEditingController();
+  @override
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,6 +54,7 @@ class _SaveAddressScreenState extends State<SaveAddressScreen> {
               SizedBox(
                 height: 50,
                 child: TextField(
+                  controller: _newAddressController,
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.only(top: 5, left: 20),
                     hintText: 'Add a New Delivery Address'
@@ -62,7 +66,13 @@ class _SaveAddressScreenState extends State<SaveAddressScreen> {
                 shape: StadiumBorder(),
                 elevation: 0,
                 color: Theme.of(context).accentColor,
-                onPressed: () { Get.snackbar('Saved', 'New Address Added', snackPosition: SnackPosition.BOTTOM); },
+                onPressed: () {
+                  _addresses.add(_newAddressController.text);
+                  _activeRecord.add(false);
+                  setState(() {
+                    _newAddressController.clear();
+                  });
+                  Get.snackbar('Saved', 'New Address Added', snackPosition: SnackPosition.BOTTOM); },
                 child: ListTile(
                   leading: SizedBox(width: 20,),
                   title: Text(S.of(context).saveNewAddress, style: TextStyle(color: Colors.white),),

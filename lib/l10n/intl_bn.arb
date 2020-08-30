@@ -33,5 +33,12 @@
   "personalInformation": "Personal Information",
   "changePassword": "Change Password",
   "addNewAddress": "Add New Address",
-  "saveNewAddress": "Save New Address"
+  "saveNewAddress": "Save New Address",
+  "nameLastName": "Name, Last Name",
+  "save": "Save",
+  "faq": "FAQ",
+  "support": "Support",
+  "support247": "Support 24/7",
+  "sendMessage": "Send Message",
+  "onlineSupport": "Online Support"
 }

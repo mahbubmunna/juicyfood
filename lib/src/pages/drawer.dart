@@ -4,6 +4,7 @@ import 'package:juicyfood/functions/class_builder.dart';
 import 'package:juicyfood/generated/l10n.dart';
 import 'package:juicyfood/src/pages/home.dart';
 import 'package:juicyfood/src/pages/pages.dart';
+import 'package:juicyfood/src/pages/support.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 
 class DrawerPage extends StatefulWidget {
@@ -78,7 +79,7 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin{
             style: TextStyle(color: Colors.white),
           ),
           icon: Icon(Icons.perm_phone_msg, color: Colors.white),
-          page: Home(),
+          page: SupportScreen(),
         ),
       ],
     );

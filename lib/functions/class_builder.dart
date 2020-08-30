@@ -1,6 +1,7 @@
 
 import 'package:juicyfood/src/pages/home.dart';
 import 'package:juicyfood/src/pages/pages.dart';
+import 'package:juicyfood/src/pages/support.dart';
 
 typedef T Constructor<T>();
 
@@ -13,6 +14,7 @@ void register<T>(Constructor<T> constructor) {
 class ClassBuilder {
   static void registerClasses() {
     register<PagesTestWidget>(() => PagesTestWidget());
+    register<SupportScreen>(() => SupportScreen());
     register<Home>(() => Home());
 
   }
