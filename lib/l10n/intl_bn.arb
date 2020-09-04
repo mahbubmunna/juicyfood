@@ -40,5 +40,16 @@
   "support": "Support",
   "support247": "Support 24/7",
   "sendMessage": "Send Message",
-  "onlineSupport": "Online Support"
+  "onlineSupport": "Online Support",
+  "comments": "Comments",
+  "shareYourInviteCode": "Share Your Invite Code",
+  "dummyShareCode": "4V54XHH78",
+  "heyJoinWantToEarn10DollarJustByInstalling": "Hey join want to earn 10 dollar just by installing and using this app, please click on this link.",
+  "youCanTweakYourSettingsFormHereCanChangeYour": "You can tweak your settings form here, can change your location preference, can see the terms and condition and privacy policy",
+  "iAgreeToShareMyLocation": "I agree to share my location",
+  "generalSettings": "General Settings",
+  "dummyTermNPolicy": "Nulla cursus vitae nisi sed venenatis. Fusce purus eros, imperdiet at mattis vel, fringilla a odio. Vestibulum luctus in lorem a mattis. Sed euismod tincidunt orci, vitae faucibus ligula scelerisque nec. Sed a orci quis lorem maximus accumsan lacinia in nisi. Cras blandit consequat sapien ut cursus. Duis in mollis magna. Sed sit amet faucibus nulla. Pellentesque non ex velit. Nam a nisi eu arcu dictum mattis. Aenean varius justo a sollicitudin tincidunt. Nullam congue sed dolor ut vehicula. Sed lobortis et nisl id auctor. Nulla cursus vitae nisi sed venenatis. Fusce purus eros, imperdiet at mattis vel, fringilla a odio.  Vestibulum luctus in lorem a mattis. Sed euismod tincidunt orci, vitae faucibus ligula scelerisque nec. Sed a orci quis lorem maximus accumsan lacinia in nisi. Cras blandit consequat sapien ut cursus. Duis in mollis magna. Sed sit amet faucibus nulla. Pellentesque non ex velit. Nam a nisi eu arcu dictum mattis. Aenean varius justo a sollicitudin tincidunt. Nullam congue sed dolor ut vehicula. Sed lobortis et nisl id auctor. Nulla cursus vitae nisi sed venenatis. Fusce purus eros, imperdiet at mattis vel, fringilla a odio. Vestibulum luctus in lorem a mattis. Sed euismod tincidunt orci, vitae faucibus ligula scelerisque nec. Sed a orci quis lorem maximus accumsan lacinia in nisi. Cras blandit consequat sapien ut cursus. Duis in mollis magna. Sed sit amet faucibus nulla. Pellentesque non ex velit. Nam a nisi eu arcu dictum mattis. Aenean varius justo a sollicitudin tincidunt. Nullam congue sed dolor ut vehicula. Sed lobortis et nisl id auctor.",
+  "privacyPolicy": "Privacy Policy",
+  "termsOfCondition": "Terms of Condition",
+  "termsOfUse": "Terms of Use"
 }

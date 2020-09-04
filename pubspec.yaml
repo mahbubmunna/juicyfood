@@ -34,6 +34,7 @@ dependencies:
   get: ^3.4.6
   country_code_picker: ^1.4.0
   kf_drawer: ^1.1.2
+  share: ^0.6.5
 
 
 dev_dependencies:
@@ -62,28 +63,6 @@ flutter:
   assets:
     - assets/cfg/
     - assets/img/
-    - assets/img/visa.png
-    - assets/img/paypal.png
-    - assets/img/paypal2.png
-    - assets/img/apple_pay.png
-    - assets/img/brazil.png
-    - assets/img/canada.png
-    - assets/img/china.png
-    - assets/img/france.png
-    - assets/img/germany.png
-    - assets/img/italy.png
-    - assets/img/netherlands.png
-    - assets/img/spain.png
-    - assets/img/united-arab-emirates.png
-    - assets/img/united-states-of-america.png
-    - assets/img/marker.png
-    - assets/img/my_marker.png
-    - assets/img/mastercard.png
-    - assets/img/visacard.png
-    - assets/img/wallet.png
-    - assets/img/cash.png
-    - assets/img/pay_pickup.png
-    - assets/img/loading.gif
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

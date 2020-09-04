@@ -452,6 +452,116 @@ class S {
       args: [],
     );
   }
+
+  /// `Comments`
+  String get comments {
+    return Intl.message(
+      'Comments',
+      name: 'comments',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Share Your Invite Code`
+  String get shareYourInviteCode {
+    return Intl.message(
+      'Share Your Invite Code',
+      name: 'shareYourInviteCode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `4V54XHH78`
+  String get dummyShareCode {
+    return Intl.message(
+      '4V54XHH78',
+      name: 'dummyShareCode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hey, want to earn 10 dollar just by installing and using this app, http://example.com`
+  String get heyJoinWantToEarn10DollarJustByInstalling {
+    return Intl.message(
+      'Hey, want to earn 10 dollar just by installing and using this app, http://example.com',
+      name: 'heyJoinWantToEarn10DollarJustByInstalling',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You can tweak your settings form here, can change your location preference, can see the terms and condition and privacy policy`
+  String get youCanTweakYourSettingsFormHereCanChangeYour {
+    return Intl.message(
+      'You can tweak your settings form here, can change your location preference, can see the terms and condition and privacy policy',
+      name: 'youCanTweakYourSettingsFormHereCanChangeYour',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `I agree to share my location`
+  String get iAgreeToShareMyLocation {
+    return Intl.message(
+      'I agree to share my location',
+      name: 'iAgreeToShareMyLocation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `General Settings`
+  String get generalSettings {
+    return Intl.message(
+      'General Settings',
+      name: 'generalSettings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nulla cursus vitae nisi sed venenatis. Fusce purus eros, imperdiet at mattis vel, fringilla a odio. Vestibulum luctus in lorem a mattis. Sed euismod tincidunt orci, vitae faucibus ligula scelerisque nec. Sed a orci quis lorem maximus accumsan lacinia in nisi. Cras blandit consequat sapien ut cursus. Duis in mollis magna. Sed sit amet faucibus nulla. Pellentesque non ex velit. Nam a nisi eu arcu dictum mattis. Aenean varius justo a sollicitudin tincidunt. Nullam congue sed dolor ut vehicula. Sed lobortis et nisl id auctor. Nulla cursus vitae nisi sed venenatis. Fusce purus eros, imperdiet at mattis vel, fringilla a odio.  Vestibulum luctus in lorem a mattis. Sed euismod tincidunt orci, vitae faucibus ligula scelerisque nec. Sed a orci quis lorem maximus accumsan lacinia in nisi. Cras blandit consequat sapien ut cursus. Duis in mollis magna. Sed sit amet faucibus nulla. Pellentesque non ex velit. Nam a nisi eu arcu dictum mattis. Aenean varius justo a sollicitudin tincidunt. Nullam congue sed dolor ut vehicula. Sed lobortis et nisl id auctor. Nulla cursus vitae nisi sed venenatis. Fusce purus eros, imperdiet at mattis vel, fringilla a odio. Vestibulum luctus in lorem a mattis. Sed euismod tincidunt orci, vitae faucibus ligula scelerisque nec. Sed a orci quis lorem maximus accumsan lacinia in nisi. Cras blandit consequat sapien ut cursus. Duis in mollis magna. Sed sit amet faucibus nulla. Pellentesque non ex velit. Nam a nisi eu arcu dictum mattis. Aenean varius justo a sollicitudin tincidunt. Nullam congue sed dolor ut vehicula. Sed lobortis et nisl id auctor.`
+  String get dummyTermNPolicy {
+    return Intl.message(
+      'Nulla cursus vitae nisi sed venenatis. Fusce purus eros, imperdiet at mattis vel, fringilla a odio. Vestibulum luctus in lorem a mattis. Sed euismod tincidunt orci, vitae faucibus ligula scelerisque nec. Sed a orci quis lorem maximus accumsan lacinia in nisi. Cras blandit consequat sapien ut cursus. Duis in mollis magna. Sed sit amet faucibus nulla. Pellentesque non ex velit. Nam a nisi eu arcu dictum mattis. Aenean varius justo a sollicitudin tincidunt. Nullam congue sed dolor ut vehicula. Sed lobortis et nisl id auctor. Nulla cursus vitae nisi sed venenatis. Fusce purus eros, imperdiet at mattis vel, fringilla a odio.  Vestibulum luctus in lorem a mattis. Sed euismod tincidunt orci, vitae faucibus ligula scelerisque nec. Sed a orci quis lorem maximus accumsan lacinia in nisi. Cras blandit consequat sapien ut cursus. Duis in mollis magna. Sed sit amet faucibus nulla. Pellentesque non ex velit. Nam a nisi eu arcu dictum mattis. Aenean varius justo a sollicitudin tincidunt. Nullam congue sed dolor ut vehicula. Sed lobortis et nisl id auctor. Nulla cursus vitae nisi sed venenatis. Fusce purus eros, imperdiet at mattis vel, fringilla a odio. Vestibulum luctus in lorem a mattis. Sed euismod tincidunt orci, vitae faucibus ligula scelerisque nec. Sed a orci quis lorem maximus accumsan lacinia in nisi. Cras blandit consequat sapien ut cursus. Duis in mollis magna. Sed sit amet faucibus nulla. Pellentesque non ex velit. Nam a nisi eu arcu dictum mattis. Aenean varius justo a sollicitudin tincidunt. Nullam congue sed dolor ut vehicula. Sed lobortis et nisl id auctor.',
+      name: 'dummyTermNPolicy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy`
+  String get privacyPolicy {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'privacyPolicy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms of Condition`
+  String get termsOfCondition {
+    return Intl.message(
+      'Terms of Condition',
+      name: 'termsOfCondition',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms of Use`
+  String get termsOfUse {
+    return Intl.message(
+      'Terms of Use',
+      name: 'termsOfUse',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

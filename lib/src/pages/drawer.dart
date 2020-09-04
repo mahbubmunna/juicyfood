@@ -4,6 +4,8 @@ import 'package:juicyfood/functions/class_builder.dart';
 import 'package:juicyfood/generated/l10n.dart';
 import 'package:juicyfood/src/pages/home.dart';
 import 'package:juicyfood/src/pages/pages.dart';
+import 'package:juicyfood/src/pages/settings.dart';
+import 'package:juicyfood/src/pages/share_n_earn.dart';
 import 'package:juicyfood/src/pages/support.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 
@@ -63,7 +65,7 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin{
             style: TextStyle(color: Colors.white),
           ),
           icon: Icon(Icons.card_giftcard, color: Colors.white),
-          page: Home(),
+          page: ShareNEarn(),
         ),
         KFDrawerItem.initWithPage(
           text: Text(
@@ -71,7 +73,7 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin{
             style: TextStyle(color: Colors.white),
           ),
           icon: Icon(Icons.settings, color: Colors.white),
-          page: Home(),
+          page: SettingsScreen(),
         ),
         KFDrawerItem.initWithPage(
           text: Text(

@@ -10,10 +10,12 @@ import 'package:juicyfood/src/pages/on_boarding.dart';
 import 'package:juicyfood/src/pages/pages.dart';
 import 'package:flutter/material.dart';
 import 'package:juicyfood/src/pages/personal_information.dart';
+import 'package:juicyfood/src/pages/privacy_policy.dart';
 import 'package:juicyfood/src/pages/registration.dart';
 import 'package:juicyfood/src/pages/reset_password.dart';
 import 'package:juicyfood/src/pages/save_address.dart';
 import 'package:juicyfood/src/pages/send_message.dart';
+import 'package:juicyfood/src/pages/terms_of_use.dart';
 import 'models/route_argument.dart';
 
 class RouteGenerator {
@@ -45,6 +47,10 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => SendMessageScreen());
       case '/FAQ':
         return MaterialPageRoute(builder: (_) => FaqScreen());
+      case '/TermsOfUse':
+        return MaterialPageRoute(builder: (_) => TermsOfUseScreen());
+      case '/PrivacyPolicy':
+        return MaterialPageRoute(builder: (_) => PrivacyPolicyScreen());
 
 
       default:

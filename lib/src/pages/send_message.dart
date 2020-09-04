@@ -26,6 +26,12 @@ class _SendMessageScreenState extends State<SendMessageScreen> {
               SizedBox(height: 5,),
               Text(S.of(context).lorem_ipsum, textAlign: TextAlign.center,),
               SizedBox(height: 40,),
+              Padding(
+                padding: const EdgeInsets.only(left: 10, bottom: 5),
+                child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(S.of(context).comments)),
+              ),
               TextField(
                 maxLines: 6,
                 decoration: InputDecoration(
