@@ -562,6 +562,166 @@ class S {
       args: [],
     );
   }
+
+  /// `Credit Card`
+  String get creditCard {
+    return Intl.message(
+      'Credit Card',
+      name: 'creditCard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `PayPal`
+  String get paypal {
+    return Intl.message(
+      'PayPal',
+      name: 'paypal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Apple Pay`
+  String get applePay {
+    return Intl.message(
+      'Apple Pay',
+      name: 'applePay',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `See your order history with its order number and clicking on each item will bring a individual order with the food items`
+  String get seeYourOrderHistoryWithItsOrderNumberAndClicking {
+    return Intl.message(
+      'See your order history with its order number and clicking on each item will bring a individual order with the food items',
+      name: 'seeYourOrderHistoryWithItsOrderNumberAndClicking',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `See your order history with its order number and individual list of each food`
+  String get seeYourOrderHistoryWithItsOrderNumberAndIndividual {
+    return Intl.message(
+      'See your order history with its order number and individual list of each food',
+      name: 'seeYourOrderHistoryWithItsOrderNumberAndIndividual',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My Promo Codes`
+  String get myPromoCodes {
+    return Intl.message(
+      'My Promo Codes',
+      name: 'myPromoCodes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You can add promo codes for later use, I will be listed here and you can use them for later purchase`
+  String get youCanAddPromoCodesForLaterUseIWill {
+    return Intl.message(
+      'You can add promo codes for later use, I will be listed here and you can use them for later purchase',
+      name: 'youCanAddPromoCodesForLaterUseIWill',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Discover Food`
+  String get discoverFood {
+    return Intl.message(
+      'Discover Food',
+      name: 'discoverFood',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Min`
+  String get min {
+    return Intl.message(
+      'Min',
+      name: 'min',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Km`
+  String get km {
+    return Intl.message(
+      'Km',
+      name: 'km',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Address:`
+  String get address {
+    return Intl.message(
+      'Address:',
+      name: 'address',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone:`
+  String get phone {
+    return Intl.message(
+      'Phone:',
+      name: 'phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Weekends`
+  String get weekends {
+    return Intl.message(
+      'Weekends',
+      name: 'weekends',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Monday-Friday`
+  String get mondayfriday {
+    return Intl.message(
+      'Monday-Friday',
+      name: 'mondayfriday',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cras blandit consequat sapien ut cursus. Duis in mollis de magna. Sed sit amet nulla. Pellentesque non ex velit.`
+  String get crasBlanditConsequatSapienUtCursusDuisInMollisDe {
+    return Intl.message(
+      'Cras blandit consequat sapien ut cursus. Duis in mollis de magna. Sed sit amet nulla. Pellentesque non ex velit.',
+      name: 'crasBlanditConsequatSapienUtCursusDuisInMollisDe',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order Details`
+  String get orderDetails {
+    return Intl.message(
+      'Order Details',
+      name: 'orderDetails',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

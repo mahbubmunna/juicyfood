@@ -3,18 +3,18 @@ import 'package:get/get.dart';
 import 'package:juicyfood/generated/l10n.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 
-class ProfileScreen extends KFDrawerContent {
+class PaymentMethodsScreen extends KFDrawerContent {
   @override
-  _ProfileScreenState createState() => _ProfileScreenState();
+  _PaymentMethodsScreenState createState() => _PaymentMethodsScreenState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
+class _PaymentMethodsScreenState extends State<PaymentMethodsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(S.of(context).profile),
+        title: Text(S.of(context).paymentMethods),
         actions: [
           IconButton(
             onPressed: widget.onMenuPressed,
@@ -27,8 +27,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
         child: Column(
           children: [
             SizedBox(height: 70,),
-            Image.asset('assets/img/profile_info.png'),
-            Text(S.of(context).profileInformation, textScaleFactor: 1.7,),
+            Image.asset('assets/img/payment_methods.png'),
+            Text(S.of(context).paymentMethods, textScaleFactor: 1.7,),
             SizedBox(height: 5,),
             Text(S.of(context).lorem_ipsum, textAlign: TextAlign.center,),
             SizedBox(height: 40,),
@@ -36,10 +36,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
               shape: StadiumBorder(),
               color: Colors.black12,
               elevation: 0,
-              onPressed: () { Get.toNamed('/AddAddress'); },
+              onPressed: () { },
               child: ListTile(
-                leading: Icon(Icons.domain),
-                title: Text(S.of(context).addAddress),
+                leading: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Image.asset('assets/img/credit-card.png'),
+                ),
+                title: Text(S.of(context).creditCard),
                 trailing: Icon(Icons.arrow_forward),
               ),
             ),
@@ -48,10 +51,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
               shape: StadiumBorder(),
               elevation: 0,
               color: Colors.black12,
-              onPressed: () { Get.toNamed('/PersonalInformation'); },
+              onPressed: () {  },
               child: ListTile(
-                leading: Icon(Icons.person_outline),
-                title: Text(S.of(context).personalInformation),
+                leading: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Image.asset('assets/img/paypal.png'),
+                ),
+                title: Text(S.of(context).paypal),
                 trailing: Icon(Icons.arrow_forward),
               ),
             ),
@@ -60,10 +66,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
               shape: StadiumBorder(),
               elevation: 0,
               color: Colors.black12,
-              onPressed: () { Get.toNamed('/ChangePassword'); },
+              onPressed: () {  },
               child: ListTile(
-                leading: Icon(Icons.lock_outline),
-                title: Text(S.of(context).changePassword),
+                leading: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Image.asset('assets/img/apple-logo.png'),
+                ),
+                title: Text(S.of(context).applePay),
                 trailing: Icon(Icons.arrow_forward),
               ),
             ),

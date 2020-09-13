@@ -51,5 +51,21 @@
   "dummyTermNPolicy": "Nulla cursus vitae nisi sed venenatis. Fusce purus eros, imperdiet at mattis vel, fringilla a odio. Vestibulum luctus in lorem a mattis. Sed euismod tincidunt orci, vitae faucibus ligula scelerisque nec. Sed a orci quis lorem maximus accumsan lacinia in nisi. Cras blandit consequat sapien ut cursus. Duis in mollis magna. Sed sit amet faucibus nulla. Pellentesque non ex velit. Nam a nisi eu arcu dictum mattis. Aenean varius justo a sollicitudin tincidunt. Nullam congue sed dolor ut vehicula. Sed lobortis et nisl id auctor. Nulla cursus vitae nisi sed venenatis. Fusce purus eros, imperdiet at mattis vel, fringilla a odio.  Vestibulum luctus in lorem a mattis. Sed euismod tincidunt orci, vitae faucibus ligula scelerisque nec. Sed a orci quis lorem maximus accumsan lacinia in nisi. Cras blandit consequat sapien ut cursus. Duis in mollis magna. Sed sit amet faucibus nulla. Pellentesque non ex velit. Nam a nisi eu arcu dictum mattis. Aenean varius justo a sollicitudin tincidunt. Nullam congue sed dolor ut vehicula. Sed lobortis et nisl id auctor. Nulla cursus vitae nisi sed venenatis. Fusce purus eros, imperdiet at mattis vel, fringilla a odio. Vestibulum luctus in lorem a mattis. Sed euismod tincidunt orci, vitae faucibus ligula scelerisque nec. Sed a orci quis lorem maximus accumsan lacinia in nisi. Cras blandit consequat sapien ut cursus. Duis in mollis magna. Sed sit amet faucibus nulla. Pellentesque non ex velit. Nam a nisi eu arcu dictum mattis. Aenean varius justo a sollicitudin tincidunt. Nullam congue sed dolor ut vehicula. Sed lobortis et nisl id auctor.",
   "privacyPolicy": "Privacy Policy",
   "termsOfCondition": "Terms of Condition",
-  "termsOfUse": "Terms of Use"
+  "termsOfUse": "Terms of Use",
+  "creditCard": "Credit Card",
+  "paypal": "PayPal",
+  "applePay": "Apple Pay",
+  "seeYourOrderHistoryWithItsOrderNumberAndClicking": "See your order history with its order number and clicking on each item will bring a individual order with the food items",
+  "seeYourOrderHistoryWithItsOrderNumberAndIndividual": "See your order history with its order number and individual list of each food",
+  "myPromoCodes": "My Promo Codes",
+  "youCanAddPromoCodesForLaterUseIWill": "You can add promo codes for later use, I will be listed here and you can use them for later purchase",
+  "discoverFood": "Discover Food",
+  "min": "Min",
+  "km": "Km",
+  "address": "Address:",
+  "phone": "Phone:",
+  "weekends": "Weekends",
+  "mondayfriday": "Monday-Friday",
+  "crasBlanditConsequatSapienUtCursusDuisInMollisDe": "Cras blandit consequat sapien ut cursus. Duis in mollis de magna. Sed sit amet nulla. Pellentesque non ex velit.",
+  "orderDetails": "Order Details"
 }

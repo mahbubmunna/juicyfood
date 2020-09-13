@@ -35,6 +35,7 @@ class MyApp extends StatelessWidget {
               fontFamily: 'Poppins',
               primaryColor: config.Colors().mainColor(1),
               brightness: brightness,
+              scaffoldBackgroundColor: Colors.white,
               accentColor: config.Colors().mainColor(1),
               focusColor: config.Colors().accentColor(1),
               hintColor: config.Colors().accentColor(1),

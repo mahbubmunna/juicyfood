@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:juicyfood/generated/l10n.dart';
 import 'package:juicyfood/src/pages/cart.dart';
 import 'package:juicyfood/src/pages/delivery.dart';
-import 'package:juicyfood/src/pages/discovery.dart';
 import 'package:juicyfood/src/pages/profile.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 
 
+import 'food_discover.dart';
 import 'home.dart';
 import 'notifications.dart';
 
@@ -21,7 +21,7 @@ class PagesTestWidget extends KFDrawerContent {
     Key key,
     this.currentTab,
   }) {
-    currentTab = currentTab != null ? currentTab : 2;
+    currentTab = currentTab != null ? currentTab : 0;
   }
 
   @override
@@ -47,7 +47,7 @@ class _PagesTestWidgetState extends State<PagesTestWidget> {
       widget.currentTab = tabItem;
       switch (tabItem) {
         case 0:
-          widget.currentPage = DiscoveryScreen();
+          widget.currentPage = FoodDiscoverScreen();
           break;
         case 1:
           widget.currentPage = DeliveryScreen();

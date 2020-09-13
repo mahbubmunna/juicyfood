@@ -1,18 +1,21 @@
 
 
 import 'package:juicyfood/src/pages/add_address.dart';
+import 'package:juicyfood/src/pages/category.dart';
 import 'package:juicyfood/src/pages/change_password.dart';
 import 'package:juicyfood/src/pages/drawer.dart';
 import 'package:juicyfood/src/pages/faq.dart';
 import 'package:juicyfood/src/pages/home.dart';
 import 'package:juicyfood/src/pages/login.dart';
 import 'package:juicyfood/src/pages/on_boarding.dart';
+import 'package:juicyfood/src/pages/order_details.dart';
 import 'package:juicyfood/src/pages/pages.dart';
 import 'package:flutter/material.dart';
 import 'package:juicyfood/src/pages/personal_information.dart';
 import 'package:juicyfood/src/pages/privacy_policy.dart';
 import 'package:juicyfood/src/pages/registration.dart';
 import 'package:juicyfood/src/pages/reset_password.dart';
+import 'package:juicyfood/src/pages/restaurant.dart';
 import 'package:juicyfood/src/pages/save_address.dart';
 import 'package:juicyfood/src/pages/send_message.dart';
 import 'package:juicyfood/src/pages/terms_of_use.dart';
@@ -51,6 +54,12 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => TermsOfUseScreen());
       case '/PrivacyPolicy':
         return MaterialPageRoute(builder: (_) => PrivacyPolicyScreen());
+      case '/OrderDetailsScreen':
+        return MaterialPageRoute(builder: (_) => OrderDetailsScreen());
+      case '/CategoryScreen':
+        return MaterialPageRoute(builder: (_) => CategoryScreen(category: args,));
+      case '/RestaurantScreen':
+        return MaterialPageRoute(builder: (_) => RestaurantScreen(restaurant: args,));
 
 
       default:

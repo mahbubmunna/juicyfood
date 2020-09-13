@@ -2,8 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:juicyfood/functions/class_builder.dart';
 import 'package:juicyfood/generated/l10n.dart';
+import 'package:juicyfood/src/pages/food_discover.dart';
 import 'package:juicyfood/src/pages/home.dart';
+import 'package:juicyfood/src/pages/order_history.dart';
 import 'package:juicyfood/src/pages/pages.dart';
+import 'package:juicyfood/src/pages/payment_methods.dart';
+import 'package:juicyfood/src/pages/profile.dart';
+import 'package:juicyfood/src/pages/promo_codes.dart';
 import 'package:juicyfood/src/pages/settings.dart';
 import 'package:juicyfood/src/pages/share_n_earn.dart';
 import 'package:juicyfood/src/pages/support.dart';
@@ -25,7 +30,7 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin{
         KFDrawerItem.initWithPage(
           text: Text('Discover', style: TextStyle(color: Colors.white)),
           icon: Icon(Icons.public, color: Colors.white),
-          page: PagesTestWidget(),
+          page: FoodDiscoverScreen(),
         ),
         KFDrawerItem.initWithPage(
           text: Text(
@@ -33,7 +38,7 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin{
             style: TextStyle(color: Colors.white),
           ),
           icon: Icon(Icons.account_circle, color: Colors.white),
-          page: Home(),
+          page: ProfileScreen(),
         ),
         KFDrawerItem.initWithPage(
           text: Text(
@@ -41,7 +46,7 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin{
             style: TextStyle(color: Colors.white),
           ),
           icon: Icon(Icons.local_offer, color: Colors.white),
-          page: Home(),
+          page: PromoCodesScreen(),
         ),
         KFDrawerItem.initWithPage(
           text: Text(
@@ -49,7 +54,7 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin{
             style: TextStyle(color: Colors.white),
           ),
           icon: Icon(Icons.assignment, color: Colors.white),
-          page: Home(),
+          page: OrderHistory(),
         ),
         KFDrawerItem.initWithPage(
           text: Text(
@@ -57,7 +62,7 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin{
             style: TextStyle(color: Colors.white),
           ),
           icon: Icon(Icons.monetization_on, color: Colors.white),
-          page: Home(),
+          page: PaymentMethodsScreen(),
         ),
         KFDrawerItem.initWithPage(
           text: Text(
