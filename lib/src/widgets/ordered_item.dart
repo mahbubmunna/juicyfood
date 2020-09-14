@@ -1,8 +1,11 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:juicyfood/models/food.dart';
 
 class OrderedItem extends StatefulWidget {
+  Food food;
+  OrderedItem({this.food});
+
   @override
   _OrderedItemState createState() => _OrderedItemState();
 }
@@ -26,14 +29,14 @@ class _OrderedItemState extends State<OrderedItem> {
               children: [
                 Row(
                   children: [
-                    Icon(Icons.fastfood, color: Colors.black12, size: 70,),
+                    Image.asset(widget.food.foodImage, height: 70, width: 70,),
                     SizedBox(width: 16,),
                     SizedBox(
                       width: 150,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Food Name ${Random().nextInt(10)}',
+                          Text(widget.food.foodName,
                             style: TextStyle(fontWeight: FontWeight.bold),
                             textScaleFactor: 1.2, ),
                           SizedBox(height: 5,),
@@ -45,7 +48,7 @@ class _OrderedItemState extends State<OrderedItem> {
                 ),
                 Column(
                   children: [
-                    Text('\$${Random().nextInt(100)}',
+                    Text('\$${int.parse(widget.food.foodPrice) * _foodQuantity}',
                       textScaleFactor: 1.2,
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),),
                     SizedBox(height: 5,),

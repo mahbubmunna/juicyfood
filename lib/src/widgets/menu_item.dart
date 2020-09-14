@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:get/get.dart';
 import 'package:juicyfood/generated/l10n.dart';
 import 'package:juicyfood/models/menu.dart';
+import 'package:juicyfood/models/restaurant.dart';
+import 'package:juicyfood/models/route_argument.dart';
 
 class MenuItem extends StatefulWidget {
   Menu menu;
-  MenuItem({this.menu});
+  Restaurant restaurant;
+  MenuItem({this.menu, this.restaurant});
   @override
   _MenuItemState createState() => _MenuItemState();
 }
@@ -17,7 +21,7 @@ class _MenuItemState extends State<MenuItem> {
       margin: EdgeInsets.symmetric(vertical: 10),
       child: InkWell(
         onTap: () {
-
+          Get.toNamed('/FoodsByMenuScreen',arguments: RouteArgument(param: [widget.restaurant, widget.menu]));
         },
         child: Container(
           decoration: BoxDecoration(
@@ -78,7 +82,6 @@ class _MenuItemState extends State<MenuItem> {
                         child: Image.asset(widget.menu.menuImage, height: 75, width: 75,))
                   ],
                 )
-
               ],
             ),
           ),

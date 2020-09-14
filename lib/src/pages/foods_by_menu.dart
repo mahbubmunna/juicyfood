@@ -3,23 +3,30 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:juicyfood/config/string.dart';
 import 'package:juicyfood/functions/common.dart';
 import 'package:juicyfood/generated/l10n.dart';
+import 'package:juicyfood/models/food.dart';
 import 'package:juicyfood/models/menu.dart';
 import 'package:juicyfood/models/restaurant.dart';
-import 'package:juicyfood/src/widgets/menu_item.dart';
+import 'package:juicyfood/models/route_argument.dart';
+import 'package:juicyfood/src/widgets/food_item.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 
-class RestaurantScreen extends KFDrawerContent {
+class FoodsByMenuScreen extends KFDrawerContent {
+  RouteArgument routeArgument;
   Restaurant restaurant;
-  RestaurantScreen({this.restaurant});
+  Menu menu;
+  FoodsByMenuScreen({this.routeArgument}) {
+    restaurant = routeArgument.param[0];
+    menu = routeArgument.param[1];
+  }
   @override
-  _RestaurantScreenState createState() => _RestaurantScreenState();
+  _FoodsByMenuScreenState createState() => _FoodsByMenuScreenState();
 }
 
-class _RestaurantScreenState extends State<RestaurantScreen> {
+class _FoodsByMenuScreenState extends State<FoodsByMenuScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBar(widget.restaurant.restaurantName, widget),
+      appBar: appBar(widget.menu.menuName, widget),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 30),
         child: ListView(
@@ -96,68 +103,21 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                 Icon(Icons.location_on)
               ],
             ),
+            SizedBox(height: 30,),
+            Center(child: Text(widget.menu.menuName, textScaleFactor: 1.6, style: TextStyle(fontWeight: FontWeight.bold),)),
             SizedBox(height: 10,),
-            Container(
-              height: 192,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(6),
-                  image: DecorationImage(
-                      fit: BoxFit.fitWidth,
-                      image: AssetImage(widget.restaurant.restaurantFoodItemPicture)
-                  )
-              ),
-            ),
+            Text(S.of(context).crasBlanditConsequatSapienUtCursusDuisInMollisDe, textScaleFactor: 1.1,),
             SizedBox(height: 10,),
-            Text(S.of(context).address, textScaleFactor: 1.1,),
-            Text(S.of(context).phone, textScaleFactor: 1.1,),
-            SizedBox(height: 20,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Row(
-                  children: [
-                    Icon(Icons.calendar_today),
-                    SizedBox(width: 5,),
-                    Text(S.of(context).mondayfriday),
-                  ],
-                ),
-                Text(widget.restaurant.restaurantRegularHours)
-              ],
-            ),
-            SizedBox(height: 2,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Row(
-                  children: [
-                    Icon(Icons.calendar_today),
-                    SizedBox(width: 5,),
-                    Text(S.of(context).weekends),
-                  ],
-                ),
-                Text(widget.restaurant.restaurantOffDayHours)
-              ],
-            ),
-            SizedBox(height: 20,),
-            Divider(),
-            SizedBox(height: 20,),
-            Text('Menu by categories', textScaleFactor: 1.4, style: TextStyle(fontWeight: FontWeight.bold),),
-            SizedBox(height: 10,),
-            Text(S.of(context).crasBlanditConsequatSapienUtCursusDuisInMollisDe),
-            SizedBox(height: 20,),
             ListView.builder(
               shrinkWrap: true,
               physics: ClampingScrollPhysics(),
-              itemCount: listOfMenus.length,
+              itemCount: listOfFoods.length,
               itemBuilder: (context, index) {
-                return MenuItem(menu: listOfMenus[index], restaurant: widget.restaurant,);
+                return FoodItem(food: listOfFoods[index],);
               },
             )
-
-
-          ],
-        ),
+        ]
       ),
-    );
+    ));;
   }
 }

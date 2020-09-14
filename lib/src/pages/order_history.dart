@@ -18,8 +18,10 @@ class _OrderHistoryState extends State<OrderHistory> {
         title: Text("Orders History"),
         actions: [
           IconButton(
-            onPressed: widget.onMenuPressed,
-            icon: Icon(Icons.menu, color: Colors.white,),
+            onPressed: () {
+              Get.offAndToNamed('/Home');
+            },
+            icon: Icon(Icons.home, color: Colors.white,),
           )
         ],
       ),

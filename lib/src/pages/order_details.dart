@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:juicyfood/config/string.dart';
 import 'package:juicyfood/generated/l10n.dart';
+import 'package:juicyfood/models/food.dart';
 import 'package:juicyfood/src/widgets/ordered_item.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 
 class OrderDetailsScreen extends KFDrawerContent {
+
   @override
   _OrderDetailsScreenState createState() => _OrderDetailsScreenState();
 }
@@ -30,7 +32,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
         child: ListView(
           children: [
             SizedBox(height: 8,),
-            Image.asset(localImagePath + 'invoice_1.png', height: 69, width: 69,),
+            Image.asset(localImagePath + 'invoice_2.png', height: 69, width: 69,),
             SizedBox(height: 5,),
             Center(
               child: Row(
@@ -57,9 +59,9 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
             ListView.builder(
               shrinkWrap: true,
               physics: ClampingScrollPhysics(),
-              itemCount: 10,
+              itemCount: listOfFoods.length,
               itemBuilder: (context, index) {
-                return OrderedItem();
+                return OrderedItem(food: listOfFoods[index],);
               },
             )
           ],

@@ -1,5 +1,6 @@
 
 import 'package:juicyfood/src/pages/food_discover.dart';
+import 'package:juicyfood/src/pages/foods_by_menu.dart';
 import 'package:juicyfood/src/pages/home.dart';
 import 'package:juicyfood/src/pages/order_details.dart';
 import 'package:juicyfood/src/pages/order_history.dart';
@@ -31,6 +32,7 @@ class ClassBuilder {
     register<ShareNEarn>(() => ShareNEarn());
     register<SettingsScreen>(() => SettingsScreen());
     register<PaymentMethodsScreen>(() => PaymentMethodsScreen());
+    register<FoodsByMenuScreen>(() => FoodsByMenuScreen());
     register<OrderHistory>(() => OrderHistory());
     register<Home>(() => Home());
 

@@ -5,6 +5,7 @@ import 'package:juicyfood/src/pages/category.dart';
 import 'package:juicyfood/src/pages/change_password.dart';
 import 'package:juicyfood/src/pages/drawer.dart';
 import 'package:juicyfood/src/pages/faq.dart';
+import 'package:juicyfood/src/pages/foods_by_menu.dart';
 import 'package:juicyfood/src/pages/home.dart';
 import 'package:juicyfood/src/pages/login.dart';
 import 'package:juicyfood/src/pages/on_boarding.dart';
@@ -28,6 +29,8 @@ class RouteGenerator {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => OnBoarding());
+      case '/Home':
+        return MaterialPageRoute(builder: (_) => DrawerPage());
       case '/Login':
         return MaterialPageRoute(builder: (_) => Login());
       case '/Registration':
@@ -60,6 +63,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => CategoryScreen(category: args,));
       case '/RestaurantScreen':
         return MaterialPageRoute(builder: (_) => RestaurantScreen(restaurant: args,));
+      case '/FoodsByMenuScreen':
+        return MaterialPageRoute(builder: (_) => FoodsByMenuScreen(routeArgument: args));
 
 
       default:
